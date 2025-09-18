@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>お問い合わせ：ひいらぎ不動産</title>
+<link rel="stylesheet" href="css/mystyle.css">
+<meta name="description" content="ひいらぎ不動産のお問い合わせ先です。">
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+<header>
+<div class="header-in">
+<a href="index.html" id="pagetop"><img src="image/logo.png" width="300" height="56" alt="Hiiragi Real Estate"></a>
+<nav>
+<ul>
+<li><a href="index.html">トップ</a></li>
+<li><a href="point.html">物件選びのポイント</a></li>
+<li><a href="bukken01.html">おすすめ物件</a></li>
+<li><a href="company.html">会社案内</a></li>
+<li>お問い合わせ</li>
+</ul>
+</nav>
+</div>
+</header>
+<article class="page">
+<ol>
+<li><a href="index.html">トップ</a>&nbsp;&nbsp;&gt;</li>
+<li>お問い合わせ</li>
+</ol>
+<h1 class="sub-h1">お問い合わせ</h1>
+<p>フォームによるお問い合わせについては、多少お時間をいただく可能性がございます。お急ぎの場合は、お電話にてお問い合わせください。</p>
+<section>
+<h2>お電話によるお問い合わせ</h2>
+<ul>
+<li>電話番号：<strong>0120-XXX-XXX</strong></li>
+<li>営業時間：10時から21時まで（毎週月曜日定休）</li>
+</ul>
+</section>
+<section>
+<h2>フォームによるお問い合わせ</h2>
+<p>以下のフォームにご記入の上、送信してください。</p>
+<form action="test.html" method="post" enctype="multipart/form-data">
+    <p>
+        <label for="username">名前(必須):</label>
+        <input type="text" name="username" id="username" placeholder="全角入力" required>
+    </p>
+    <p>
+        <label for="userkana">フリガナ(任意):</label>
+        <input type="text" name="userkana" id="userkana" placeholder="カタカナ入力">
+    </p>
+    <p>
+        <label for="usertel">電話番号(必須):</label>
+        <input type="tel" name="usertel" id="usertel" required>
+    </p>
+    <p>
+        <label for="usermail">メールアドレス(必須):</label>
+        <input type="email" name="usermail" id="usermail" required>
+    </p>
+    <p>
+        希望地域（複数選択可）<br>
+        <input type="checkbox" name="userchiiki[]" id="saiwai" value="幸区">
+        <label for="saiwai">幸区</label>
+        <input type="checkbox" name="userchiiki[]" id="nakahara" value="中原区">
+        <label for="nakahara">中原区</label>
+        <input type="checkbox" name="userchiiki[]" id="shinai" value="川崎市内">
+        <label for="shinai">川崎市内</label>
+        <input type="checkbox" name="userchiiki[]" id="shigai" value="川崎市外" checked>
+        <label for="shigai">川崎市外</label>
+    </p>
+    <p>性別<br>
+    <input type="radio" name="sei" id="man" value="男">
+    <label for="man">男性</label>
+    <input type="radio" name="sei" id="woman" value="女">
+    <label for="woman">女性</label>
+    <input type="radio" name="sei" id="none" value="未回答" checked>
+    <label for="none">未回答</label>
+    </p>
+    <p><label for="date">内覧希望日</label>
+    <input type="date" name="nairanbi" id="date">
+    </p>
+    <p>
+        <label for="count">人数</label>
+        <input type="number" name="count" id="count" min="1" max="10">
+    </p>
+    <p>
+        <label for="file">間取り図</label>
+        <input type="file" name="file" id="file">
+    </p>
+    <input type="hidden" name="test" value="隠し文字">
+    <p>
+        <label for="area">お住まいの地域</label>
+        <select name="area" id="area">
+            <option value="関東">関東</option>
+            <option value="中部">中部</option>
+            <option value="関西">関西</option>
+        </select>
+    </p>
+    <p>
+        <label for="usercomment">問い合わせ内容：</label>
+        <textarea name="usercomment" id="usercomment"></textarea>
+    </p>
+<button type="submit">送信する</button>
+</form>
+</section>
+</article>
+<footer>
+<p>川崎市のお部屋探しは「ひいらぎ不動産」におまかせください</p>
+<address>〒212-0014 神奈川県川崎市幸区大宮町1-5 JR川崎タワー<br>
+TEL 044-XXX-XXXX</address>
+<small>&copy; 2024 Hiiragi Real Estate. All Rights Reserved.</small>
+</footer>
+</body>
+</html>
