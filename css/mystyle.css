@@ -1,0 +1,346 @@
+@charset "utf-8";
+/* スムーズスクロールに対応しよう */
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color:#ffffff;
+	color:#333333;
+	font-family: "メイリオ","Hiragino Sans",sans-serif;
+	margin: 0;
+	padding: 0;
+	/* background-image:url(../image/shuno.jpg) ; */
+	/* background-repeat: repeat-y; */
+	/* background-size: cover; */
+	/* coverで長辺まで画像を広げる */
+}
+p{
+	font-size: 90%;
+	line-height: 1.8;
+}
+h1{
+	font-size: 180%;
+}
+h2{
+	font-size: 120%;
+	border-bottom: 1px dashed #003366;
+	border-left: 10px solid #003366;
+	padding-left: 7px;
+}
+footer{
+	text-align: center;
+	background-color: #003366;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	clear: both;
+}
+.topimg{
+	width:100%;
+	/* height:430px; */
+}
+article{
+	/* 土台にrerative */
+	position: relative;
+	clear: both;
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.catch{
+	position: absolute;
+	top:20px;
+	left:30px;
+	color: #ffffff;
+	text-shadow: 0px 5px 10px #000000;
+	background-color: #ff000040;
+	padding: 20px;
+}
+header{
+	background-color: #003366;
+	color: #ffffff;
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+	line-height: 1.8;
+	font-size:90%;
+}
+ul time{
+	background-color: #999999;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+nav ul{
+	font-weight: bold;
+	text-align: right;
+	margin: 0;
+	padding-top: 26px;
+	padding-bottom: 5px;
+}
+nav li{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 12px;
+	border-right: 1px solid #ffffff;
+}
+header img{
+	float: left;
+}
+.header-in{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sub-h1{
+	background: linear-gradient(to left,#ffffff,#dcdcdc);
+	padding-top: 5px;
+	padding-left: 10px;
+	border-left: 15px solid #003366;
+	margin: 0;
+}
+.point-list{
+	list-style-image: url(../image/list.gif);
+	font-weight: bold;
+	margin-left: 30px;
+}
+.point-img{
+	box-shadow: 0px 0px 10px 3px #aaaaaa;
+	border-radius: 10px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.point-img:hover{
+	opacity: 0.8;
+	/* 透過することで光って見える技 */
+}
+.sentou{
+	clear: both;
+	text-align: right;
+}
+.go-top{
+	width: 80px;
+	height: 80px;
+	padding: 10px;
+	background-color: #ff0000;
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	/* 縦横比同じボックスに50％すると正円になる */
+}
+ol li{
+	display: inline;
+	margin-right: 5px;
+	font-size: 80%;
+}
+ol{
+	padding-left: 0;
+}
+.page{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+nav ul a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav ul a:hover{
+	color: #ffcc00;
+	text-decoration: underline;
+}
+
+table{
+	border: 1px solid #333333;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	/* tableは幅指定しなくてもautoで真ん中くる
+	幅指定してもOK */
+	font-size: 90%;
+	margin-bottom: 20px;
+}
+th{
+	border: 1px solid #333333;
+	padding: 10px;
+	background-color: #ccccff;
+	width: 20%;
+}
+td{
+	border: 1px solid #333333;
+	padding: 10px;
+}
+caption{
+	caption-side: bottom;
+}
+aside h1{
+	font-size: 120%;
+	border-bottom: 2px dotted #666666;
+	padding-left: 5px;
+	margin: 0;
+}
+aside li{
+	border-bottom: 1px dotted #666666;
+}
+aside ul{
+	margin: 0;
+}
+aside a{
+	display: block;
+	color: #333333;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+aside a:hover{
+	background-color: #dcdcdc;
+}
+.bukkenmei{
+	display: block;
+	font-size: 80%;
+	color:#666666;
+}
+h3{
+	padding-left: 10px;
+	border-left: 20px solid #00cccc;
+	font-size: 105%;
+}
+.select{
+	background-color: #ffcc00;
+}
+.bukken-kiji{
+	width: 75%;
+	float: left;
+}
+aside{
+	float: right;
+}
+iframe{
+	/* 親要素いっぱいに動画を表示 */
+	width: 100%;
+	/* 縦横比の指定ができるaspect-ratioを使うよ */
+	aspect-ratio: 16/9;
+	/* ↑横縦16：9のフレームを作る */
+}
+textarea{
+	display: block;
+	width: 600px;
+	height: 120px;
+}
+input{
+	display: block;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	display: inline;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+	width: 400px;
+}
+select{
+	width: 200px;
+}
+button{
+	width: 180px;
+	height: 50px;
+	padding: 10px;
+}
+form{
+	margin-bottom: 20px;
+}
+/* ★★こからスマホの設定★★ */
+@media(max-width:959px){
+	header img{
+		float: none;
+	}
+	nav ul{
+		text-align: left;
+		padding: 0;
+		margin-left: 10px;
+	}
+	article{
+		width:auto;
+	}
+	article img{
+		max-width: 100%;
+		height: auto;
+	}
+	.header-in{
+		width: auto;
+	}
+	aside{
+		float: none;
+	}
+	.bukken-kiji{
+		float: none;
+		width: 100%;
+	}
+}
+
+/* 600以下の時 */
+@media(max-width:600px){
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+	.catch{
+		top:5px;
+		left:10px;
+		background-color: #33333300;
+		/* ↑色8桁指定の場合うしろ2桁00で透明になるよ */
+	}
+	.catch p{
+		font-size: 75%;
+	}
+	footer{
+		font-size: 75%;
+	}
+	.point-img{
+		float: none;
+		/* ↓真ん中寄せ設定 */
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	th,td{
+		display: block;
+		width:100%;
+		box-sizing: border-box;
+		/* ↑padding内包。width100%にしてもはみ出さない
+		もしくはwidth:autoを使う */
+	}
+	video{
+		max-width: 100%;
+		height: auto;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea{
+	width: 320px;
+	}
+}
+
+@media print{
+	.catch{
+		color: #000000;
+		text-shadow: none;
+		background: none;
+		/* 背景消したい人はこれ入れて↑ */
+	}
+	footer{
+		color: #000000;
+	}
+}
